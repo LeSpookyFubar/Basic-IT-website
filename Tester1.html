@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Knowledge Base</title>
+    <meta name="description" content="An introductory IT knowledge base with networking, security and coding categories.">
     <style>
       body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,6 +34,16 @@ a {
     transition: color 0.3s ease;
 }
 
+a:focus-visible {
+    outline: 3px solid #0056b3;
+    outline-offset: 4px;
+}
+
+section {
+    margin-top: 32px;
+    scroll-margin-top: 20px;
+}
+
 a:hover {
     color: #0056b3;
 }
@@ -48,47 +59,27 @@ a:hover {
     </style>
 </head>
 <body>
-    <h1>IT Knowledge Base</h1>
-    <ul>
-        <li><a href="network.html">Networking</a></li>
-        <li><a href="security.html">Security</a></li>
-        <li><a href="coding.html">Coding</a></li>
-    </ul>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Networking</title>
-</head>
-<body>
-    <h1>Networking</h1>
-    <p>This is the networking category. Add your networking-related content here.</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security</title>
-</head>
-<body>
-    <h1>Security</h1>
-    <p>This is the security category. Add your security-related content here.</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding</title>
-</head>
-<body>
-    <h1>Coding</h1>
-    <p>This is the coding category. Add your coding-related content here.</p>
+    <main class="container">
+        <h1>IT Knowledge Base</h1>
+        <nav aria-label="Knowledge categories">
+            <ul>
+                <li><a href="#networking">Networking</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#coding">Coding</a></li>
+            </ul>
+        </nav>
+        <section id="networking" aria-labelledby="networking-heading">
+            <h2 id="networking-heading">Networking</h2>
+            <p>This is the networking category. Add your networking-related content here.</p>
+        </section>
+        <section id="security" aria-labelledby="security-heading">
+            <h2 id="security-heading">Security</h2>
+            <p>This is the security category. Add your security-related content here.</p>
+        </section>
+        <section id="coding" aria-labelledby="coding-heading">
+            <h2 id="coding-heading">Coding</h2>
+            <p>This is the coding category. Add your coding-related content here.</p>
+        </section>
+    </main>
 </body>
 </html>
